@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+  
+</head>
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+   }
+body {
+    font-family: Arial, sans-serif;
+    background-color: blueviolet;
+    
+}
+
+.quiz-section {
+    height: auto;
+    max-width: 800px; /* Set a maximum width for better readability on larger screens */
+    margin: 0 auto; /* Center the quiz section on the page */
+    border: 1px solid rgb(177, 142, 142);
+    background-color: white;
+    margin-top: 10%;
+    border-radius: 8px;
+    
+}
+li{
+    margin: 10px;
+    list-style-type: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 40%;
+    padding: 5px;
+    
+}
+
+
+/* Styles for mobile view */
+@media only screen and (max-width: 600px) {
+    .quiz-section {
+        padding: 10px;
+    }
+
+    .questions {
+        font-size: 18px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    .answer {
+        margin-right: 5px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .btns {
+        text-align: center;
+    }
+
+    #submit {
+        font-size: 16px;
+    }
+}
+
+/* Styles for desktop view */
+@media only screen and (min-width: 601px) {
+    .quiz-section {
+        padding: 20px;
+    }
+
+    .questions {
+        font-size: 24px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    .answer {
+        margin-right: 10px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    .btns {
+        text-align: center;
+    }
+
+    #submit {
+        font-size: 18px;
+    }
+}
+
+</style>
+
+<body>
+    <div class="quiz-section">
+        <div id="quiz">
+            <div class="questions" id="questions">Quiz Questions</div>
+            <hr>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="a">
+                    <label for="a" id="option1">Quiz options</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="b">
+                    <label for="b" id="option2">Quiz options</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="c">
+                    <label for="c" id="option3">Quiz options</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="d">
+                    <label for="d" id="option4">Quiz options</label>
+                </li>
+            </ul>
+            <hr>
+            <div class="btns">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

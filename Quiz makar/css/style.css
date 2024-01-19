@@ -1,0 +1,79 @@
+/* Common styles for both mobile and desktop */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.quiz-section {
+    max-width: 800px; /* Set a maximum width for better readability on larger screens */
+    margin: 0 auto; /* Center the quiz section on the page */
+}
+
+/* Styles for mobile view */
+@media only screen and (max-width: 600px) {
+    .quiz-section {
+        padding: 10px;
+    }
+
+    .questions {
+        font-size: 18px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    .answer {
+        margin-right: 5px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .btns {
+        text-align: center;
+    }
+
+    #submit {
+        font-size: 16px;
+    }
+}
+
+/* Styles for desktop view */
+@media only screen and (min-width: 601px) {
+    .quiz-section {
+        padding: 20px;
+    }
+
+    .questions {
+        font-size: 24px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    .answer {
+        margin-right: 10px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    .btns {
+        text-align: center;
+    }
+
+    #submit {
+        font-size: 18px;
+    }
+}
